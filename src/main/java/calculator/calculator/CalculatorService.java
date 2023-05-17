@@ -5,12 +5,12 @@ import org.springframework.stereotype.Service;
 @Service
 public interface CalculatorService {
 
-    int sum(int first, int second);
+    int sum(String first, String second);
 
-    int diff(int first, int second);
+    int diff(String first, String second);
 
-    int multiply(int first, int second);
+    int multiply(String first, String second);
 
-    double div(int first, int second);
+    int div(String first, String second);
 }
 

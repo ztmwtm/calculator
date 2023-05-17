@@ -5,19 +5,23 @@ import org.springframework.stereotype.Service;
 @Service
 public class CalculatorServiceImpl implements CalculatorService {
 
-    public int sum(int first, int second) {
-        return first + second;
+    @Override
+    public int sum(String first, String second) {
+        return Integer.parseInt(first) + Integer.parseInt(second);
     }
 
-    public int diff(int first, int second) {
-        return first - second;
+    @Override
+    public int diff(String first, String second) {
+        return Integer.parseInt(first) - Integer.parseInt(second);
     }
 
-    public int multiply(int first, int second) {
-        return first * second;
+    @Override
+    public int multiply(String first, String second) {
+        return Integer.parseInt(first) * Integer.parseInt(second);
     }
 
-    public double div(int first, int second) {
-        return first * 1. / second;
+    @Override
+    public int div(String first, String second) {
+        return Integer.parseInt(first) / Integer.parseInt(second);
     }
 }
